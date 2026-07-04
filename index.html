@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sainabou Camara — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --bg: #f7f9fc;
+            --text: #1a1a1a;
+            --accent: #4a6cf7;
+            --accent-light: #7ea1ff;
+            --card-bg: #ffffff;
+            --border: #e3e8f0;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #4a6cf7, #7ea1ff);
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .tagline {
+            margin-top: 0.75rem;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            padding: 3rem 1rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .project-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border: 1px solid var(--border);
+        }
+
+        ul {
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #eef2f9;
+            color: #555;
+            margin-top: 3rem;
+        }
+
+        .resume-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--accent);
+            color: white;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        .resume-btn:hover {
+            background: var(--accent-light);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sainabou Camara</h1>
+    <p>Cybersecurity Analyst • Python Developer • Software Developer • Tech Support</p>
+    <p class="tagline">Entry-level technologist building practical security tools and learning by doing.</p>
+</header>
+
+<section class="section">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I’m an entry-level cybersecurity and Python developer who learns by building. I enjoy creating
+            practical tools that make software ecosystems safer, especially around supply chain security,
+            automation, and secure software development.
+        </p>
+        <p>
+            I don’t come from a long tech background yet — instead, my projects show my curiosity, persistence,
+            and willingness to figure things out. I’m actively growing through hands-on work, homelabs, and
+            continuous learning, with a goal of becoming a strong cybersecurity professional.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <h2>Featured Project — Chain Scan</h2>
+    <div class="card">
+        <p>
+            Chain Scan is a security analysis tool that detects supply-chain risks in Python dependencies.
+            It scans PyPI packages and local Python files, analyzes metadata and code indicators, assigns
+            risk scores, and generates both JSON and HTML reports. It also includes a Flask web dashboard
+            with a clean, branded interface.
+        </p>
+
+        <img src="assets/dashboard.png" class="project-img" alt="Chain Scan Dashboard">
+        <img src="assets/report-example.png" class="project-img" alt="Chain Scan Report">
+        <img src="assets/folder-structure.png" class="project-img" alt="Project Folder Structure">
+
+        <p style="margin-top:1rem;">
+            🔗 <a href="https://github.com/<your-username>/chain-scan">View Chain Scan on GitHub</a>
+        </p>
+    </div>
+
+    <h2>Other Projects</h2>
+    <div class="card">
+        <ul>
+            <li><strong>Networking Homelab:</strong> VirtualBox + pfSense lab exploring routing, firewall rules, and basic network security.</li>
+            <li><strong>Python Utilities:</strong> Small scripts and tools for automation, file handling, and experimenting with security concepts.</li>
+            <li><strong>Learning Notes:</strong> Personal notes and experiments around cybersecurity fundamentals and secure coding practices.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Skills</h2>
+    <div class="card">
+        <ul>
+            <li><strong>Cybersecurity:</strong> Supply chain security, basic code analysis, risk scoring mindset, security-focused thinking.</li>
+            <li><strong>Programming:</strong> Python, Flask, HTML/CSS, working with JSON APIs.</li>
+            <li><strong>Tools:</strong> VS Code, Git & GitHub, Pytest, VirtualBox.</li>
+            <li><strong>Networking:</strong> pfSense, basic routing and firewalling, homelab setups.</li>
+            <li><strong>Tech Support:</strong> troubleshooting, diagnostics, helping users solve technical issues.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Resume</h2>
+    <div class="card">
+        <p>
+            You can download my resume below. It highlights my skills, projects, and learning journey
+            as an entry-level technologist.
+        </p>
+        <a class="resume-btn" href="assets/resume.pdf">Download Resume</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: <strong>Sainabou144@gmail.com</strong></p>
+        <p>GitHub: <a href="https://github.com/Yasai44">github.com/<Yasai44></a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sainabou-camara-8630b1255">linkedin.com</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 — Built by Sainabou Camara
+</footer>
+
+</body>
+</html>
